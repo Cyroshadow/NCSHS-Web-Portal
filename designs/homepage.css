@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(fonts/Jost-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: "Jost", sans-serif;
+}
+
+main {
+    padding: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+p {
+    margin: 25px;
+}
