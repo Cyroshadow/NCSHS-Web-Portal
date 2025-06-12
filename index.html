@@ -5,7 +5,6 @@
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta property="og:title" content="Naga City Science Highschool" />
     <meta property="og:description" content="An NCSHS website" />
-    <meta property="og:image" content="https://picsum.photos/200/200" />
     <title>NCSHS</title>
     <link rel="icon" href="images/logo.ico"> 
 </head>
@@ -27,6 +26,12 @@
         <div>
             FOOTER Lorem ipsum dolor sit amet aperitare von diomaci
         </div>
-    </footer>
+    </footer>   
+    <script>
+    const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        let day = new Date();
+        document.getElementById("month").innerHTML = months[day.getMonth()];
+        document.getElementById("day").innerHTML = day.getDate();
+    </script>
 </body>
 </html>
