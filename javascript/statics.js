@@ -27,7 +27,6 @@ class banner extends HTMLElement {
 @font-face {
 font-family: "Montserrat";
 src: url(designs/fonts/Montserrat-VariableFont_wght.ttf);
-font-weight: variable;
 }
 
 @font-face {
@@ -41,7 +40,6 @@ font-family: "Montserrat";
 src: url(designs/fonts/Montserrat-Medium.ttf);
 font-weight: medium;
 }
-
 
 header{
     margin: 20px;
