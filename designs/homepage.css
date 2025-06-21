@@ -264,3 +264,11 @@ a, a:link, a:visited, a:hover, a:active {
     color: #2A5370;
     text-decoration: none;
 }
+
+aside {
+    display: none;
+}
+
+footer {
+    display: flex;
+}
