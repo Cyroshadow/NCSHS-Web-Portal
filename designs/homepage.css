@@ -53,7 +53,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        border-style: solid none solid none;
+        border-style: none none solid none;
         border-width: thin;
         font-size: 0.75vw;
         height: 10em;
@@ -73,6 +73,7 @@ body {
     #name {
         font-family: "Montserrat", sans-serif;
         color: #2A5370;
+        background-image: none;
     }
     #name > h1 {
         font-size: 3em;
@@ -217,9 +218,9 @@ div {
     color: #2A5370;    
 }
 
-#firstlook {
+#home {
     background-image: url("../images/ncshsmainbldg.png");
-    background-size: cover;
+    background-size: cover;   
 }
 
 #tagline > h1 {
@@ -271,4 +272,8 @@ aside {
 
 footer {
     display: flex;
+}
+
+#about {
+    background-color: #2A5370;
 }
