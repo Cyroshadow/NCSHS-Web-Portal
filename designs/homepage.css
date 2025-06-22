@@ -43,6 +43,15 @@
     margin:0;
 }
 
+html {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+main section {
+    scroll-snap-align: start;
+}
+
 body {
     font-family: "Jost", sans-serif;
     background-color: #f0f0f0;
@@ -270,28 +279,24 @@ footer {
     padding-top: 1em;
 }
 
-#info {
+.info {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     color: #2A5370;
     border-width: thin;
     margin: 2.5%;
 }
 
-#info > p {
+.info > div {
     width: 200px;
     margin: 2em 8em 2em 8em;
 }
 
-html {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-main section {
-    scroll-snap-align: start;
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 #staff {
