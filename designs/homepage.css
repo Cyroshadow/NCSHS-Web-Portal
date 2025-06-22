@@ -270,13 +270,26 @@ aside {
 }
 
 footer {
-    height: 200px;
+    height: 170px;
     left: 0;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     background-color: #2A5370;
     font-size: 40;
     display: flex;
-    justify-content: center;
+    flex-direction: row ;
+    justify-content: space-around;
     align-items: center;
+    
+}
+.footer-bar{
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    background-color: darkblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-indent: 30px;
+    color:#d5d8de
 }
