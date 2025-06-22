@@ -235,27 +235,6 @@ div {
     font-weight: lighter;
 }
 
-#info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: #f0f0f0;
-}
-
-#info > p {
-    width: 200px;
-}
-
-#about-us {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content:  center;
-    margin-bottom: 24px;
-    color: #f0f0f0
-}
-
 #name {
     display: flex;
     flex-direction: column;
@@ -275,5 +254,50 @@ footer {
 }
 
 #about {
-    background-color: #2A5370;
+    background-color: #f0f0f0;
+    color:#2A5370;
+    padding: 2.5%;
+}
+
+#about > h1 {
+    display: flex;
+    border-top: solid;
+    border-width: thin;
+    justify-content:  center;
+    margin-bottom: 24px;
+    color: #2A5370;
+    margin: 0px 2.5% 0px 2.5%;
+    padding-top: 1em;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #2A5370;
+    border-width: thin;
+    margin: 2.5%;
+}
+
+#info > p {
+    width: 200px;
+    margin: 2em 8em 2em 8em;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+main section {
+    scroll-snap-align: start;
+}
+
+#staff {
+    background: #2A5370;
+}
+
+#awards {
+    background: #f0f0f0;
 }
