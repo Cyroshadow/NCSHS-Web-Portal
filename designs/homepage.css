@@ -269,19 +269,26 @@ aside {
     display: none;
 }
 
-footer {
+.footer {
     height: 170px;
     left: 0;
     bottom: 10px;
     width: 100%;
-    background-color: #2A5370;
+    background-color: #0f172a;
     font-size: 40;
     display: flex;
     flex-direction: row ;
     justify-content: space-around;
     align-items: center;
+    color: #f0f0f0;
     
 }
+
+.footer > div{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-bar{
     left: 0;
     bottom: 1px;
@@ -292,4 +299,10 @@ footer {
     align-items: center;
     text-indent: 30px;
     color:#d5d8de
+}
+
+#matrixlogo {
+    height: 30%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
