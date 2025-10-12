@@ -37,6 +37,14 @@
     font-weight: bold;
 }
 
+:root {
+    --text: #f0f0f0;
+    --background: #0b315a;
+    --primary: #a4bed9;
+    --secondary: #2b4f76;
+    --accent: #4e89c9;
+}
+
 * {
     box-sizing: border-box;
     padding:0;
@@ -231,6 +239,7 @@ div {
 #home {
     background-image: url("../images/ncshsmainbldg.png");
     background-size: cover;   
+    height: 100vh;
 }
 
 #tagline > h1 {
@@ -261,23 +270,25 @@ aside {
 
 footer {
     display: flex;
+    height: auto;
 }
 
 #about {
     background-color: #f0f0f0;
     color:#2A5370;
     padding: 2.5%;
+    height: 100vh;
 }
 
 #about > h1 {
     display: flex;
-    border-top: solid;
+    border-bottom: solid;
     border-width: thin;
     justify-content:  center;
     margin-bottom: 24px;
     color: #2A5370;
     margin: 0px 2.5% 0px 2.5%;
-    padding-top: 1em;
+    padding-bottom: 2vh;
 }
 
 .info {
@@ -302,55 +313,106 @@ footer {
 }
 
 #clubs {
-    background-color: #0b315a;
+    background-color: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
     color:#f0f0f0;
-    padding-top: 2.5%;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat";
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 #clubs > h1 {
     display: flex;
-    border-top: solid;
-    border-width: thin;
-    justify-content:  center;
-    margin-bottom: 24px;
-    margin: 0px auto 0px auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    justify-content: center;
+    border-bottom: solid;
+    margin: 0px 4vw 0px 4vw;
+    padding: 0px 0px 2vh 0px;
+}
+
+#club-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-grow: 1;
 }
 
 .clubs {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 10%;
-    justify-items: center;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    color: var(--background);
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 38vw;
+    height: 32vh;
+    
 }
 
 .clubs > div {
-    height: 25vh;
-    width: 25vh;
-    grid-column: span 1;
-    grid-row: span 1;
-    color: #f0f0f0;
     display: flex;
     flex-direction: column;
 }
 
-name {
-    margin: auto;
-    padding: 4%
+.clubs > div > h2{
+    font-size: xx-large;
+    margin: 0px 0px 1vh 3.5vh;
 }
+
+.clubs > div > p {
+    font-family: "Jost";
+    text-wrap: wrap;
+    text-align: left;
+    margin: 0px 3.5vh 0px 3.5vh;
+}
+
 .club-logo {
+    height: 12vw;
+    width: 12vw;
+    object-fit: contain;
+    padding: 0.5vh;
+    margin-left: 3.5vh;
     border-radius: 100%;
-    aspect-ratio: 2/2;
-    object-fit: cover;
+    border: solid var(--background);  
+    aspect-ratio: 1/1;
 }
 
 #awards {
     background: #f0f0f0;
+}
+
+#matrix {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#eureka {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#concilium {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#matematika {   
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
 }

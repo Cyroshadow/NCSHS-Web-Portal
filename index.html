@@ -48,10 +48,6 @@
     <h2>The radiant star in the heart of Bicol</h2>
 </div>
 </section>
-<script>
-    let scrheight = window.innerHeight;
-    document.getElementById("home").style.height = `${scrheight}px`;
-</script>
 <section id="about">
     <h1>About us</h1>
     <div class="info">
@@ -71,110 +67,55 @@
         </div>        
     </div>
 </section>
-<script>
-    document.getElementById("about").style.height = `${scrheight}px`;
-</script>
 <section id="clubs">
-    <h1>Clubs and Organizations</h1>
-    <div class = clubs>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>DXMC</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>CTP</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Galleria</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Teatro</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Paraluman</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Invicta</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Lit Guild</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Interact</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>YES-O</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Bata Kontra Droga</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Campus Ministry</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Kagubay</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Zonta</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Concilium</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Eureka</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Matematika</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Matrix</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Kingsmen</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>Sports Federation</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>STEM-C</name>
-       </div>
-       <div>
-        <img src="https://picsum.photos/300" class = "club-logo">
-        <name>ABM-C</name>
-       </div>
+    <h1> Clubs and Organizations</h1>
+    <div id="club-group">
+    
+    <div id = "matrix">
+    <div class="clubs">
+        <img class="club-logo" src="images\club logos\matrix.jpg">
+        <div>
+            <h2>The Matrix</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque arcu vitae tempus efficitur. Nunc dignissim tincidunt ex vel malesuada. Duis nulla lorem, tincidunt in vehicula nec, elementum a ligula.</p>
+        </div>
+    </div>
+    </div>
+
+    <div id = "concilium">
+    <div class="clubs">
+        <img class="club-logo" src="images\club logos\concilium.png">
+        <div>
+            <h2>Concilium</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque arcu vitae tempus efficitur. Nunc dignissim tincidunt ex vel malesuada. Duis nulla lorem, tincidunt in vehicula nec, elementum a ligula.</p>
+        </div>
+    </div>
+    </div>
+
+    <div id = "eureka">
+    <div class="clubs">
+        <img class="club-logo" src="images\club logos\eureka.jpg">
+        <div>
+            <h2>Eureka</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque arcu vitae tempus efficitur. Nunc dignissim tincidunt ex vel malesuada. Duis nulla lorem, tincidunt in vehicula nec, elementum a ligula.</p>
+        </div>
+    </div>
+    </div>
+
+    <div id = "matematika">
+    <div class="clubs">
+        <img class="club-logo" src="images\club logos\matematika.png">
+        <div>
+            <h2>Matematika</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque arcu vitae tempus efficitur. Nunc dignissim tincidunt ex vel malesuada. Duis nulla lorem, tincidunt in vehicula nec, elementum a ligula.</p>
+        </div>
+    </div>
+    </div>
+
     </div>
 </section>
-<script>
-    document.getElementById("clubs").style.height = `${scrheight}px`;
-</script>
-<script>
-    document.getElementsByClassName("clubs").style.width = `${scrwidth}px`;
-</script>
 <section id="awards">
 
 </section>
-<script>
-    document.getElementById("awards").style.height = `${scrheight}px`;
-</script>
 </main>
 <aside>
     <div><li> item 1 </li>
@@ -191,5 +132,20 @@ const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "
     let day = new Date();
     document.getElementById("date").innerHTML = months[day.getMonth()] + " " + day.getDate();
 </script>
+<!--script src="javascript/clubscroll.js"></script-->
 </body>
 </html>
+
+
+<!--
+<div class="clubs">
+        <img class="club-logo" src="https://picsum.photos/200">
+        <div>
+            <h2>${"pass"}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque arcu vitae tempus efficitur. Nunc dignissim tincidunt ex vel malesuada. Duis nulla lorem, tincidunt in vehicula nec, elementum a ligula.</p>
+        </div>
+</div>
+
+
+    
+-->
