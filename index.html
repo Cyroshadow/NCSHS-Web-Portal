@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-us"> 
+<html lang="en-us">
+
 <head>
     <link rel="stylesheet" href="designs/homepage.css">
     <meta name="google-site-verification" content="g0Wk4xwtJG6JXYBt5cmFwseJrPR-86fRIo8uSOrPstY">
@@ -14,93 +15,92 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW692K64RE"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-QW692K64RE');
+    gtag('config', 'G-QW692K64RE');
 </script>
 
 <body>
-<main>
-<section id="home">
-<header>
-    <img src="images\\ncshslogo.png">
-    <div id="name">
-    <h1><a href="index.html">Naga City Science High School</a></h1>
-    <h2>The Official School Portal of NCSHS</h2>
-    <h3>Brought to you by The Matrix</h3>
-    </div>
-<nav>
-    <li><a href="contact.html">Contact Us</a></li>
-    <li><a href="clubs.html">Clubs</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="enrolment.html">Enroll</a></li>
-</nav>
-<div id="calendar">
-<h4 id="date"></h4> 
-<h5 id="schoolyr">School Year 2025-2026</h5>
-</div>
-</header>
-<div id="tagline">
-    <!--img src="https://picsum.photos/400"-->
-    <h1>Service for God and Man</h1>
-    <h2>The radiant star in the heart of Bicol</h2>
-</div>
-</section>
-<script>
-    let scrheight = window.innerHeight;
-    document.getElementById("home").style.height = `${scrheight}px`;
-</script>
-<section id="about">
-    <h1>About us</h1>
-    <div class="info">
-        <div class="column">
-            <img src="https://picsum.photos/200">
-            <p>Naga City Science High School is a secondary public science high school located in the Heart of Bicol, Naga City.</p>
-        </div>
-        
-        <div class="column">
-            <img src="https://picsum.photos/200">
-            <p>Headed by Ma'am Baby Ruby F. Laurente, Sayans (as it is affectionately called) has provided quality science-focused education to its students since 1994; 3 decades of service for God and man.</p>
-        </div>
+    <main>
+        <section id="home">
+            <template-banner></template-banner>
+            </div>
+            </header>
+            <div id="tagline">
+                <!--img src="https://picsum.photos/400"-->
+                <h1>Service for God and Man</h1>
+                <h2>The radiant star in the heart of Bicol</h2>
+            </div>
+        </section>
 
-        <div class="column">
-            <img src="https://picsum.photos/200">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sodales ante. Vestibulum vel laoreet eros, vel pellentesque mi.</p>
-        </div>        
-    </div>
-</section>
-<script>
-    document.getElementById("about").style.height = `${scrheight}px`;
-</script>
-<section id="staff">
-    
-</section>
-<script>
-    document.getElementById("staff").style.height = `${scrheight}px`;
-</script>
-<section id="awards">
+        <section id="about">
+            <h1>About us</h1>
+            <div class="info">
+                <div class="column">
+                    <img src="https://picsum.photos/200">
+                    <p>Naga City Science High School is a secondary public science high school located in the Heart of
+                        Bicol, Naga City.</p>
+                </div>
 
-</section>
-<script>
-    document.getElementById("awards").style.height = `${scrheight}px`;
-</script>
-</main>
-<aside>
-    <div><li> item 1 </li>
-        ASIDE Lorem ipsum dolor sit amet aperitare von diomaci
-    </div>
-</aside>
-<footer>
-    <div>
-        FOOTER Lorem ipsum dolor sit amet aperitare von diomaci
-    </div>
-</footer>   
-<script>
-const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    let day = new Date();
-    document.getElementById("date").innerHTML = months[day.getMonth()] + " " + day.getDate();
-</script>
+                <div class="column">
+                    <img src="https://picsum.photos/200">
+                    <p>Headed by Ma'am Baby Ruby F. Laurente, Sayans (as it is affectionately called) has provided
+                        quality science-focused education to its students since 1994; 3 decades of service for God and
+                        man.</p>
+                </div>
+
+                <div class="column">
+                    <img src="https://picsum.photos/200">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sodales ante. Vestibulum vel
+                        laoreet eros, vel pellentesque mi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mental">
+            <h1>Happy Mental Awareness Day!</h1>
+            <h2>Take a quiz, get a quote!</h2>
+
+            <div>
+                <p id="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sodales ante. Vestibulum vel laoreet eros, vel pellentesque mi.</p>
+                <fieldset>
+                    <legend>Select an option</legend>
+
+                    <div>
+                        <input type="radio" name="quiz" id="option1">
+                        <label for="option1">Option 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="quiz" id="option2">
+                        <label for="option2">Option 2</label>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <section id="staff">
+
+        </section>
+
+        <section id="awards">
+
+        </section>
+
+    </main>
+    <aside>
+        <div>
+            <li> item 1 </li>
+            ASIDE Lorem ipsum dolor sit amet aperitare von diomaci
+        </div>
+    </aside>
+    <footer>
+        <div>
+            FOOTER Lorem ipsum dolor sit amet aperitare von diomaci
+        </div>
+    </footer>
+    <script src="javascript/statics.js"></script>
 </body>
+
 </html>
