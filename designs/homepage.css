@@ -394,28 +394,13 @@ section>h1 {
     display: flex;
     border-bottom: solid;
     border-width: thin;
+    align-items: center;
     justify-content: center;
     margin-bottom: 24px;
     color: #2A5370;
     margin: 0px 2.5% 0px 2.5%;
     padding-bottom: 2vh;
-}
-#about {
-    background-color: #f0f0f0;
-    color:#2A5370;
     padding: 2.5%;
-    height: 100vh;
-}
-
-#about > h1 {
-    display: flex;
-    border-bottom: solid;
-    border-width: thin;
-    justify-content:  center;
-    margin-bottom: 24px;
-    color: #2A5370;
-    margin: 0px 2.5% 0px 2.5%;
-    padding-bottom: 2vh;
 }
 
 /* Section Desc */
@@ -425,6 +410,7 @@ section>h2 {
     margin-bottom: 24px;
     color: #2A5370;
     margin: 0px 2.5% 0px 2.5%;
+    padding: 1.5%;
 }
 
 fieldset {
@@ -452,7 +438,7 @@ fieldset>legend {
 #about {
     background-color: #f0f0f0;
     color: #2A5370;
-    padding: 2.5%;
+    height: 100vh;
 }
 
 .info {
@@ -485,7 +471,7 @@ fieldset>legend {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 85%;
+    height: 50%;
 }
 
 #question {
@@ -501,6 +487,7 @@ fieldset>legend {
 
 #clubs {
     background-color: var(--background);
+    background-image: url(../images/club-pattern.png);
     background-size: cover;
     background-repeat: repeat;
     background-size: 500px;
@@ -523,6 +510,7 @@ fieldset>legend {
     border-bottom: solid;
     margin: 0px 4vw 0px 4vw;
     padding: 0px 0px 2vh 0px;
+    color: white;
 }
 
 #club-group {
