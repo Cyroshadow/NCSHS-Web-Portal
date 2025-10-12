@@ -37,6 +37,16 @@
     font-weight: bold;
 }
 
+@keyframes scrollBackground {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
 :root {
     --text: #f0f0f0;
     --background: #0b315a;
@@ -47,14 +57,8 @@
 
 * {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
-
-    --text: #e9eef3;
-    --background: #0b315a;
-    --primary: #a4bed9;
-    --secondary: #2b4f76;
-    --accent: #4e89c9;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -154,7 +158,6 @@ body {
         font-weight: normal;
         font-size: 1em;
     }
-
 }
 
 @media (max-width:1027px) {
@@ -168,7 +171,7 @@ body {
         height: 32em;
         margin: 2em;
     }
-    
+
     header > img {
     display: flex;
     flex-direction: row;
@@ -237,6 +240,82 @@ body {
     }
 }
 
+@media (max-width:1027px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-style: solid none solid none;
+        border-width: thin;
+        font-size: 0.5vw;
+        height: 32em;
+        margin: 2em;
+    }
+
+    header>img {
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        margin: 2em;
+    }
+
+    #name>h1 {
+        font-family: "Montserrat", serif;
+        font-size: 6em;
+        color: #2A5370;
+    }
+
+    #name>h2 {
+        font-family: "Montserrat", serif;
+        font-size: 2.5em;
+        color: #2A5370;
+    }
+
+    #name>h3 {
+        font-family: "Montserrat", serif;
+        font-size: 1em;
+        color: #2A5370;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Montserrat";
+        font-weight: medium;
+        font-size: 3em;
+        list-style-type: none;
+        margin-left: auto;
+        height: 8em;
+    }
+
+    nav>li {
+        margin: 1em;
+    }
+
+    #calendar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        color: #2A5370;
+        margin: 8em;
+    }
+
+    #date {
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    #schoolyr {
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 1em;
+    }
+}
+
 nav > li {
     display: flex;
     align-items: center;
@@ -261,27 +340,26 @@ input {
   margin: 0.4rem;
 }
 
-
 #tagline {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Garamond";
-    color: #2A5370;    
+    color: #2A5370;
 }
 
 #home {
     background-image: url("../images/testbg.png");
-    background-size: cover;   
+    background-size: cover;
     height: 100vh;
 }
 
-#tagline > h1 {
+#tagline>h1 {
     margin: 85px auto auto auto;
     font-size: 75px;
 }
 
-#tagline > h2 {
+#tagline>h2 {
     font-family: "Jost";
     margin-bottom: 400px;
     font-size: 32px;
@@ -293,7 +371,11 @@ input {
     flex-direction: column;
 }
 
-a, a:link, a:visited, a:active {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
     color: #2A5370;
     text-decoration: none;
 }
@@ -308,11 +390,11 @@ footer {
 }
 
 /* Section Title */
-section > h1 { 
+section>h1 {
     display: flex;
     border-bottom: solid;
     border-width: thin;
-    justify-content:  center;
+    justify-content: center;
     margin-bottom: 24px;
     color: #2A5370;
     margin: 0px 2.5% 0px 2.5%;
@@ -337,7 +419,7 @@ section > h1 {
 }
 
 /* Section Desc */
-section > h2 {
+section>h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
@@ -353,19 +435,23 @@ fieldset {
     border-color: #2A5370;
     color: #2A5370;
 }
-fieldset > legend {
+
+fieldset>legend {
     padding: 2%;
     background-color: #2A5370;
     color: white;
 }
 
-#staff, #awards, #about, #mental {
+#staff,
+#awards,
+#about,
+#mental {
     height: 100vh;
 }
 
 #about {
     background-color: #f0f0f0;
-    color:#2A5370;
+    color: #2A5370;
     padding: 2.5%;
 }
 
@@ -379,19 +465,21 @@ fieldset > legend {
     margin: 2.5%;
 }
 .column {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0em 4em 0em 4em;
 }
-.column > img {
+
+.column>img {
     margin-bottom: 20px;
 }
 
 #mental {
     background: #f0f0f0;
 }
-#mental > div {
+
+#mental>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,21 +487,24 @@ fieldset > legend {
     width: 100%;
     height: 85%;
 }
+
 #question {
     font-size: 1.5em;
     width: 50%;
     margin: 2.5%;
-    color:#2A5370;
+    color: #2A5370;
 }
 
 #staff {
     background: #2A5370;
 }
+
 #clubs {
     background-color: var(--background);
     background-size: cover;
-    background-repeat: no-repeat;
-    color:#f0f0f0;
+    background-repeat: repeat;
+    background-size: 500px;
+    color: #f0f0f0;
     height: 100vh;
     width: 100vw;
     font-family: "Montserrat";
@@ -422,9 +513,11 @@ fieldset > legend {
     flex-direction: column;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
+
+    animation: scrollBackground 10s linear 0s infinite;
 }
 
-#clubs > h1 {
+#clubs>h1 {
     display: flex;
     justify-content: center;
     border-bottom: solid;
@@ -451,20 +544,20 @@ fieldset > legend {
     align-items: center;
     width: 38vw;
     height: 32vh;
-    
+
 }
 
-.clubs > div {
+.clubs>div {
     display: flex;
     flex-direction: column;
 }
 
-.clubs > div > h2{
+.clubs>div>h2 {
     font-size: xx-large;
     margin: 0px 0px 1vh 3.5vh;
 }
 
-.clubs > div > p {
+.clubs>div>p {
     font-family: "Jost";
     text-wrap: wrap;
     text-align: left;
@@ -478,7 +571,7 @@ fieldset > legend {
     padding: 0.5vh;
     margin-left: 3.5vh;
     border-radius: 100%;
-    border: solid var(--background);  
+    border: solid var(--background);
     aspect-ratio: 1/1;
 }
 
@@ -507,7 +600,7 @@ fieldset > legend {
     border-radius: 41px;
 }
 
-#matematika {   
+#matematika {
     padding: 16px;
     border-color: #f0f0f0;
     border: solid;
