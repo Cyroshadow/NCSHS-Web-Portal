@@ -37,6 +37,14 @@
     font-weight: bold;
 }
 
+:root {
+    --text: #f0f0f0;
+    --background: #0b315a;
+    --primary: #a4bed9;
+    --secondary: #2b4f76;
+    --accent: #4e89c9;
+}
+
 * {
     box-sizing: border-box;
     padding:0;
@@ -146,6 +154,7 @@ body {
         font-weight: normal;
         font-size: 1em;
     }
+
 }
 
 @media (max-width:1027px) {
@@ -159,7 +168,7 @@ body {
         height: 32em;
         margin: 2em;
     }
-
+    
     header > img {
     display: flex;
     flex-direction: row;
@@ -295,18 +304,36 @@ aside {
 
 footer {
     display: flex;
+    height: auto;
 }
 
 /* Section Title */
 section > h1 { 
     display: flex;
-    border-top: solid;
+    border-bottom: solid;
     border-width: thin;
     justify-content:  center;
     margin-bottom: 24px;
     color: #2A5370;
     margin: 0px 2.5% 0px 2.5%;
-    padding-top: 1em;
+    padding-bottom: 2vh;
+}
+#about {
+    background-color: #f0f0f0;
+    color:#2A5370;
+    padding: 2.5%;
+    height: 100vh;
+}
+
+#about > h1 {
+    display: flex;
+    border-bottom: solid;
+    border-width: thin;
+    justify-content:  center;
+    margin-bottom: 24px;
+    color: #2A5370;
+    margin: 0px 2.5% 0px 2.5%;
+    padding-bottom: 2vh;
 }
 
 /* Section Desc */
@@ -382,7 +409,107 @@ fieldset > legend {
 #staff {
     background: #2A5370;
 }
+#clubs {
+    background-color: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#f0f0f0;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat";
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+#clubs > h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+    margin: 0px 4vw 0px 4vw;
+    padding: 0px 0px 2vh 0px;
+}
+
+#club-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.clubs {
+    display: flex;
+    flex-direction: row;
+    color: var(--background);
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 38vw;
+    height: 32vh;
+    
+}
+
+.clubs > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.clubs > div > h2{
+    font-size: xx-large;
+    margin: 0px 0px 1vh 3.5vh;
+}
+
+.clubs > div > p {
+    font-family: "Jost";
+    text-wrap: wrap;
+    text-align: left;
+    margin: 0px 3.5vh 0px 3.5vh;
+}
+
+.club-logo {
+    height: 12vw;
+    width: 12vw;
+    object-fit: contain;
+    padding: 0.5vh;
+    margin-left: 3.5vh;
+    border-radius: 100%;
+    border: solid var(--background);  
+    aspect-ratio: 1/1;
+}
 
 #awards {
     background: #f0f0f0;
+}
+
+#matrix {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#eureka {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#concilium {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#matematika {   
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
 }
