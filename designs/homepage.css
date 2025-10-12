@@ -37,6 +37,15 @@
     font-weight: bold;
 }
 
+@keyframes scrollBackground {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
 :root {
     --text: #f0f0f0;
     --background: #0b315a;
@@ -53,6 +62,7 @@
 
 html {
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
@@ -273,14 +283,8 @@ footer {
     height: auto;
 }
 
-#about {
-    background-color: #f0f0f0;
-    color:#2A5370;
-    padding: 2.5%;
-    height: 100vh;
-}
-
-#about > h1 {
+/* Section Title */
+section > h1 { 
     display: flex;
     border-bottom: solid;
     border-width: thin;
@@ -289,6 +293,41 @@ footer {
     color: #2A5370;
     margin: 0px 2.5% 0px 2.5%;
     padding-bottom: 2vh;
+    padding: 2.5%;
+}
+
+/* Section Desc */
+section > h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #2A5370;
+    margin: 0px 2.5% 0px 2.5%;
+    padding: 1.5%;
+}
+
+fieldset {
+    width: 50%;
+    margin: 0 2.5% 0 2.5%;
+    padding: 1em;
+    font-size: 1.25em;
+    border-color: #2A5370;
+    color: #2A5370;
+}
+fieldset > legend {
+    padding: 2%;
+    background-color: #2A5370;
+    color: white;
+}
+
+#staff, #awards, #about, #mental {
+    height: 100vh;
+}
+
+#about {
+    background-color: #f0f0f0;
+    color:#2A5370;
+    padding: 2.5%;
 }
 
 .info {
@@ -312,10 +351,33 @@ footer {
     margin-bottom: 20px;
 }
 
+#mental {
+    background: #f0f0f0;
+}
+#mental > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+#question {
+    font-size: 1.5em;
+    width: 50%;
+    margin: 2.5%;
+    color:#2A5370;
+}
+
+#staff {
+    background: #2A5370;
+}
 #clubs {
     background-color: var(--background);
+    background-image: url(../images/poker-pattern.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: 500px;
     color:#f0f0f0;
     height: 100vh;
     width: 100vw;
@@ -325,6 +387,8 @@ footer {
     flex-direction: column;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
+    
+    animation: scrollBackground 10s linear 0s infinite;
 }
 
 #clubs > h1 {
@@ -333,6 +397,7 @@ footer {
     border-bottom: solid;
     margin: 0px 4vw 0px 4vw;
     padding: 0px 0px 2vh 0px;
+    color: white;
 }
 
 #club-group {
