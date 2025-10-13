@@ -18,7 +18,7 @@
 :root {
     --text: #0f170d;
     --background: #f4faf3;
-    --primary: #52e431;
+    --primary: #779a70;
     --secondary: #a7b6d2;
     --accent: #4185f8;
     --head-font: "Montserrat";
@@ -66,16 +66,17 @@ h2 {
 }
 
 #goodinternet {
-    height: 100vh;
+    height: 102vh;
     display: flex;
     flex-direction: column;    
 }
 
 #plot-twist-message-box {
     display: flex;
-    background-color: var(--head-text-box);
+    background-color: var(--primary);
     height: 8vw;
     justify-content: center;
+    margin-bottom: 2vw;
 }
 
 #plot-twist-message {
