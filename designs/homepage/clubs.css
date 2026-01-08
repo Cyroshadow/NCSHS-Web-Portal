@@ -1,0 +1,105 @@
+#clubs {
+    background-color: var(--background);
+    background-image: url(../../images/club-pattern.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: 500px;
+    color: #f0f0f0;
+    height: 100vh;
+
+    font-family: "Montserrat";
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-snap-type: x proximity;
+
+    animation: scrollBackground 20s linear 0s infinite;
+}
+
+#clubs>h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+    margin: 0px 4vw 0px 4vw;
+    padding: 0px 0px 2vh 0px;
+    color: white;
+}
+
+#club-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.clubs {
+    display: flex;
+    flex-direction: row;
+    color: var(--background);
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 38vw;
+    height: 32vh;
+
+}
+
+.clubs>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.clubs>div>h2 {
+    font-size: xx-large;
+    margin: 0px 0px 1vh 3.5vh;
+}
+
+.clubs>div>p {
+    font-family: "Jost";
+    text-wrap: wrap;
+    text-align: left;
+    margin: 0px 3.5vh 0px 3.5vh;
+}
+
+.club-logo {
+    height: 12vw;
+    width: 12vw;
+    object-fit: contain;
+    padding: 0.5vh;
+    margin-left: 3.5vh;
+    border-radius: 100%;
+    border: solid var(--background);
+    aspect-ratio: 1/1;
+}
+
+#matrix {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#eureka {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#concilium {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}
+
+#matematika {
+    padding: 16px;
+    border-color: #f0f0f0;
+    border: solid;
+    border-radius: 41px;
+}

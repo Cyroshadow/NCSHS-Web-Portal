@@ -1,0 +1,150 @@
+@keyframes scrollBackground {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+main section {
+    scroll-snap-align: start;
+}
+body {
+    font-family: "Jost", sans-serif;
+    background-color: #f0f0f0;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+#tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Garamond";
+    color: #2A5370;
+}
+
+#home {
+    background-image: url(../../images/testbg.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+#tagline>h1 {
+    margin: 85px auto auto auto;
+    font-size: 75px;
+}
+
+#tagline>h2 {
+    font-family: "Jost";
+    margin-bottom: 400px;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #2A5370;
+    text-decoration: none;
+}
+
+li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    display: none;
+}
+
+footer {
+    display: flex;
+    height: auto;
+}
+
+/* Section Title */
+section>h1 {
+    display: flex;
+    border-bottom: solid;
+    border-width: thin;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #2A5370;
+    margin: 0px 2.5% 0px 2.5%;
+    padding-bottom: 2vh;
+    padding: 2.5%;
+}
+
+/* Section Desc */
+section>h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #2A5370;
+    margin: 0px 2.5% 0px 2.5%;
+    padding: 1.5%;
+}
+
+fieldset {
+    width: 50%;
+    margin: 0 2.5% 0 2.5%;
+    padding: 1em;
+    font-size: 1.25em;
+    border-color: #2A5370;
+    color: #2A5370;
+}
+
+fieldset>legend {
+    padding: 2%;
+    background-color: #2A5370;
+    color: white;
+}
+
+section {
+    height: 100vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    color: #2A5370;
+    border-width: thin;
+    margin: 2.5%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 4em 0em 4em;
+}
+.column>img {
+    margin-bottom: 20px;
+}

@@ -1,7 +1,8 @@
 class banner extends HTMLElement {
   connectedCallback() {
     const date = new Date().toDateString().substring(4, 11).toUpperCase();
-    this.innerHTML = `<header>
+    this.innerHTML = 
+    `<header>
         <img src="images\\ncshslogo.png">
         <div id="name">
         <h1><a href="index.html">Naga City Science High School</a></h1>
