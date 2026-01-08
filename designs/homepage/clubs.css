@@ -87,11 +87,95 @@
     aspect-ratio: 1/1;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes glitch {
+
+    0%,
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 145%, 0 145%);
+        transform: translate(0);
+    }
+
+    33% {
+        clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
+        transform: translate(0px, -5px);
+    }
+
+    66% {
+        clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+        transform: translate(0px, 5px);
+    }
+}
+
+@keyframes scanlines {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -40px;
+    }
+}
+
 #matrix {
     padding: 16px;
-    border-color: #f0f0f0;
     border: solid;
+    border-color: #0f0;
     border-radius: 41px;
+}
+
+#matrix .club-logo {
+    border-color: #0f0;
+    perspective: 5.5cm;
+    animation: rotate infinite 5s linear;
+}
+
+#matrix .clubs {
+    background: linear-gradient(to top, #000000, #000000, #0d2407, #0d2407);
+    background-size: cover;
+    background-size: 100% 4px;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+    animation: scanlines infinite 2s linear;
+}
+
+
+
+#matrix-text {
+    color: #0f0;
+    font-size: 5em;
+    font-family: monospace;
+    position: relative;
+    text-shadow: 0 0 5px #0f0;
+    padding: 0 2px;
+    z-index: 2;
+    /* Ensure it stays above the rain effect */
+}
+
+#matrix-text::before {
+    content: attr(data-text);
+    position: absolute;
+    padding: 0 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: glitch 2s ease infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-2px, -2px);
+    color: #0f0;
+    text-shadow: 0 0 8px #0f0;
 }
 
 #eureka {
